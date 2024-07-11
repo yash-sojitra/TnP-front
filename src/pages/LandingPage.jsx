@@ -1,10 +1,24 @@
+import Achievers from "../components/LandingPage/Achievers";
+import Director from "../components/LandingPage/Director";
+import Header from "../components/LandingPages/Header";
+import Moto from "../components/LandingPage/Moto";
+import PlacementProcedure from "../components/LandingPage/PlacementProcedure";
 
-const LandingPage = () => {
+function LandingPage() {
   return (
-    <div>
-      <h1 className='text-center'>Landing Page</h1>
-    </div>
-  )
+    <>
+      <Header/>
+      <section>
+        <Moto/>
+        <Achievers/>
+        <Director/>
+        <PlacementProcedure/>
+      </section>
+      
+    </>
+
+  );
 }
 
-export default LandingPage
+export default LandingPage;
+
